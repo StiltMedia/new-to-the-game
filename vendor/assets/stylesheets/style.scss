@@ -8351,3 +8351,9 @@
 	.athlete {
 		border: 5px solid white;
 	}
+
+	.did-you-know {
+		padding: 80px 0;
+		hr {width: 50px;margin-left: 0;border-top: black 1px solid;}
+		.bkg {min-height: 300px;}
+	}
