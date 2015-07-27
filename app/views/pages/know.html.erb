@@ -19,19 +19,23 @@
 <!-- End #page-header -->
 
 
+
+
 <section class="did-you-know">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-7 col-md-offset-1">
-        <h3>Black Athletes</h3>
-        <hr>
-        <p class="light">
-          On April 15, 1947 Jackie Robinson became the first African American to play in the major leagues.  While in college at the University of California Los Angeles (UCLA), in 1939, Robinson became the first athlete to win varsity letters in four sports football, basketball, track and baseball. Jackie Robinson broke down baseball’s color barrier in 1947, enduring countless acts of racial abuse to create opportunities for all African-Americans in the world of baseball. Unfortunately, today just 3.8% of all college baseball players and 5.3% of all college softball players are Black.
-        </p>
+    <% @knows.each do |k| %>
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-1">
+          <h3><%= k.title %></h3>
+          <hr>
+          <p class="light">
+            <%= k.description %>
+          </p>
+        </div>
+        <div class="col-sm-6 col-sm-offset-1 bkg" style="padding-right:0;background-image: url(<%= k.picture %>);background-size:cover;background-position: center center;">
+        </div>
       </div>
-      <div class="col-md-4 bkg indian" style="padding-left:0;padding-right:0;">
-      </div>
-    </div>
+    <% end %>
 
     <div class="row">
       <div class="col-md-4 bkg" style="padding-left:0;padding-right:0;">
