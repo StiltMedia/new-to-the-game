@@ -24,135 +24,62 @@
 <section class="did-you-know">
   <div class="container-fluid">
     <% @knows.each do |k| %>
-      <div class="row">
-        <div class="col-sm-4 col-sm-offset-1">
-          <h3><%= k.title %></h3>
-          <hr>
-          <p class="light">
-            <%= k.description %>
-          </p>
+      <% if k.id.odd? == true %>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="box">
+              <h3><%= k.title %></h3>
+              <hr>
+              <p class="light">
+                <%= k.description %>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-7 bkg" style="background-image: url(<%= k.picture(:retina) %>);background-size:cover;background-position: center center;">
+          </div>
         </div>
-        <div class="col-sm-6 col-sm-offset-1 bkg" style="padding-right:0;background-image: url(<%= k.picture %>);background-size:cover;background-position: center center;">
+      <% else %>
+        <div class="row">
+          <div class="col-sm-7 bkg" style="background-image: url(<%= k.picture(:retina) %>);background-size:cover;background-position: center center;">
+          </div>
+          <div class="col-sm-5">
+            <div class="box">
+              <h3><%= k.title %></h3>
+              <hr>
+              <p class="light">
+                <%= k.description %>
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
+      <% end %>
     <% end %>
-
-    <div class="row">
-      <div class="col-md-4 bkg" style="padding-left:0;padding-right:0;">
-      </div>
-      <div class="col-md-7 col-md-offset-1">
-        <h3>American Indian/ Alaskan Native Males</h3>
-        <hr>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-7 col-md-offset-1">
-        <h3>Asian Females</h3>
-        <hr>
-      </div>
-      <div class="col-md-4 bkg" style="padding-left:0;padding-right:0;">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-4 bkg" style="padding-left:0;padding-right:0;">
-      </div>
-      <div class="col-md-7 col-md-offset-1">
-        <h3>Asian Males</h3>
-        <hr>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-7 col-md-offset-1">
-        <h3>Black Female</h3>
-        <hr>
-      </div>
-      <div class="col-md-4 bkg" style="padding-left:0;padding-right:0;">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-4 bkg" style="padding-left:0;padding-right:0;">
-      </div>
-      <div class="col-md-7 col-md-offset-1">
-        <h3>Black Males</h3>
-        <hr>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-7 col-md-offset-1">
-        <h3>Hispanic Female</h3>
-        <hr>
-      </div>
-      <div class="col-md-4 bkg" style="padding-left:0;padding-right:0;">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-4 bkg" style="padding-left:0;padding-right:0;">
-      </div>
-      <div class="col-md-7 col-md-offset-1">
-        <h3>Hispanic Males</h3>
-        <hr>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-7 col-md-offset-1">
-        <h3>Native Hawaiian Pacific Islander Females</h3>
-        <hr>
-      </div>
-      <div class="col-md-4 bkg" style="padding-left:0;padding-right:0;">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-4 bkg" style="padding-left:0;padding-right:0;">
-      </div>
-      <div class="col-md-7 col-md-offset-1">
-        <h3>Native Hawaiian Pacific Islander Males</h3>
-        <hr>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-7 col-md-offset-1">
-        <h3>Other Females</h3>
-        <hr>
-      </div>
-      <div class="col-md-4 bkg" style="padding-left:0;padding-right:0;">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-4 bkg" style="padding-left:0;padding-right:0;">
-      </div>
-      <div class="col-md-7 col-md-offset-1">
-        <h3>Other Males</h3>
-        <hr>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-7 col-md-offset-1">
-        <h3>White Females</h3>
-        <hr>
-      </div>
-      <div class="col-md-4 bkg" style="padding-left:0;padding-right:0;">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-4 bkg" style="padding-left:0;padding-right:0;">
-      </div>
-      <div class="col-md-7 col-md-offset-1">
-        <h3>White Males</h3>
-        <hr>
-      </div>
-    </div>
-
   </div>
 </section>
+
+
+Did You Know Section (Scripts for pictures)
+
+1.
+
+On April 15, 1947 Jackie Robinson became the first African American to play in the major leagues.  While in college at the University of California Los Angeles (UCLA), in 1939, Robinson became the first athlete to win varsity letters in four sports football, basketball, track and baseball. Jackie Robinson broke down baseball’s color barrier in 1947, enduring countless acts of racial abuse to create opportunities for all African-Americans in the world of baseball. Unfortunately, today just 3.8% of all college baseball players and 5.3% of all college softball players are Black.
+2.
+Football, perhaps better than any other sport, mirrors the values of the Hispanic community. “There is a prevailing sense of ‘family’ in football,” said Pro Football Hall of Fame tackle Anthony Muñoz. “You get that in the Hispanic community, and that’s what you want in a football team.” The first Hispanic American drafted by an NFL team was Jose Aguirre in 1941 by the Washington Redskins. Today, just 3.3% of all college football players are Hispanic.
+3.
+The evidence supporting sports participation for young people is overwhelming. Participating in sports has the power to combat everything from racism to low self-image, to the high-school drop-out rate. Sports are the greatest tool we have in today’s society to help children develop positive character traits and life values. From the basketball court to the soccer field, the tennis court to the swimming pool, youth sports are the ultimate classroom. Kids learn the importance of teamwork, sportsmanship, perseverance, respect for authority and rules, and how to win with class and lose with dignity. Children who play sports develop general physical fitness in a way that’s fun, and they establish lifelong habits for good health.
+4.
+Since a group of American unknowns won the first Women's World Cup in 1991, the popularity of women's soccer has sky rocketed. Although women’s soccer has taken hold in many suburban areas, participation rates amongst girls in the urban community are still disturbingly low. Briana Scurry, who made her name as a goalie for the women’s US National team, once said, "There's a lot of talent in the U.S. that's not being tapped into, that's clear to me. The biggest piece missing, in my opinion, are Black players." Sadly, just 4.1% of all female soccer players are Black.
+5.
+Astonishing enough, there are only 6 positions in the NFL where there are more White than Black players. Those positions are center, placekicker, long snapper, punter, quarterback and tight end. Of the 175 cornerbacks in the league, 170 are Black. At running back, 107 of the 120 players are African-American. Unfortunately, just 3 out of 10 current NFL players are White.
+6.
+Collegiate sports and athletic scholarships in particular, have served as portals to higher education for generations. Unfortunately, Hispanics are the beneficiaries of those scholarships at rates that are far fewer than their Black and White counterparts. Although behind in college sports, Latinos are a rising power in professional sports; Latinos dominate boxing, soccer and baseball. Despite their growing presence in professional sports, relatively few Latinos play sports in college, even in baseball and soccer where they are overrepresented at the professional level. Hispanics are the largest ethnic minority group in the country. However, the demographics of our [NCAA] member institutions do not reflect this growth in the student-athlete population.
+7.
+A Gallup Poll taken in 2003 found the percentage of African-Americans referring to baseball as their favorite sport to watch declined from about 43% in 1960 (Three years after Jackie Robinson retired from baseball) to just 5%. Clearly the lack of participation isn't just an issue for Black players; it's becoming an issue for Black fans as well. Given that the number of Black superstars in the major leagues for fans to relate with does not compare to the number of relatable superstars in basketball and football, baseball’s connection to the urban community has been limited at best. Until there are more players for the urban community to connect with baseball will continue to see its fan base and participation rates within the urban community reduced. Currently just 3.8% of all baseball players are Black.
+
+8.
+Surprisingly, up until the 2014 season the WNBA had not had a single Asian or Hispanic player since 2011 and 2007 respectively. In the WNBA, Whites are underrepresented vs. the US population by a factor of 3.2%, Blacks are overrepresented vs. the US population by a factor of 5.3%, and the women’s basketball population looks nothing like America. There is a significant lack of racial diversity in the population of WNBA players, with an underrepresentation of White players, just 2 Hispanic players out of a total of 171 players (1%) and zero Asian players. Unfortunately, the WNBA organization does not reflect America’s racial diversity in its player population.
+9.
+Hispanics are the largest minority in the United States today and some of the world's best athletes in baseball, football, basketball and boxing, amongst other sports. But the fact still remains that Hispanics are still far from creating their own legacy in the game of tennis. Although Rafael Nadal is one of the most revered athletes in the world, Hispanic-American tennis players are virtually nonexistent on the professional tours. Currently just 5.8% of all collegiate tennis players are Hispanic.
+10.
+ College participation rates point to a softball culture that has traditionally failed to connect with largely African-American communities, even in places where the sport is otherwise prevalent. In 1951, Betty Chapman became the first professional African-American softball player. Following in Chapman’s footsteps, Natasha Watley became the first African-American to play on the USA Softball team in the 2004 Olympics, where she won a gold medal. “You don’t turn on the TV and see African-American softball players,” Watley said in an interview for ESPN. “It’s not in your face, so it’s not the norm. But I want girls of color to see that it can be the norm. There is a place for you to play collegiately and earn a scholarship.” Currently just 5.3% of all softball players are Black.
+rails new APPNAME --database=postgresql
