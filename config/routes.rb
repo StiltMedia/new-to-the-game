@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/did-you-know' => 'pages#know'
   get '/thanks' => 'pages#thanks'
   get '/contact' => 'contacts#new'
+  get '/learn-more' => 'pages#learn'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
