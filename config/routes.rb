@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get '/our-mission' => 'pages#mission'
   get '/did-you-know' => 'pages#know'
+  get '/thanks' => 'pages#thanks'
+  get '/contact' => 'contacts#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

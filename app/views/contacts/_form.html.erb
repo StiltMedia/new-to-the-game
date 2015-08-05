@@ -1,33 +1,20 @@
-<%= form_for(@contact) do |f| %>
-  <% if @contact.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
-
-      <ul>
-      <% @contact.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+<div class="fullwidth clearfix">
+  <div class="contact_form type-2 white-form">
+    <%= form_for @contact, html: {class:'clearfix form oswald normal antialiased', id: 'contact_form'} do |f| %>
+      <div class="fullwidth clearfix">
+        <div class="f-left">
+          <%= f.text_field :name, placeholder: 'Name', id: 'name' %>
+        </div>
+        <div class="f-right">
+          <%= f.text_field :email, placeholder: 'Email', id: 'email' %>
+        </div>
+      </div>
+      <%# Subject %>
+      <%= f.text_field :subject, placeholder: 'Subject', id: 'subject' %>
+      <%# Message %>
+      <%= f.text_area :message, placeholder: 'Message', id: 'message' %>
+      <%# Submit %>
+      <%= f.submit 'Send', id: 'submit' %>
+    <% end %>
   </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :subject %><br>
-    <%= f.text_field :subject %>
-  </div>
-  <div class="field">
-    <%= f.label :message %><br>
-    <%= f.text_area :message %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>
