@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 
   def know
-    @knows = DidYouKnow.all
+    @knows = DidYouKnow.all.order('id ASC')
   end
 end

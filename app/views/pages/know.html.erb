@@ -28,8 +28,10 @@
         <div class="row">
           <div class="col-sm-5">
             <div class="box">
-              <h3><%= k.title %></h3>
-              <hr>
+              <% unless k.title.blank? %>
+                <h3><%= k.title %></h3>
+                <hr>
+              <% end %>
               <p class="light">
                 <%= k.description %>
               </p>
