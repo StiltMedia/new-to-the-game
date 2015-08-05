@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get '/thanks' => 'pages#thanks'
   get '/contact' => 'contacts#new'
   get '/learn-more' => 'pages#learn'
+  get '/eos-evaluation' => 'pages#eos'
+  get '/partners-supporters' => 'pages#partners', as: :partners
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
