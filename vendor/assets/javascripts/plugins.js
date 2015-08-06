@@ -23,26 +23,26 @@ HOME PAGE IMAGE SLIDER (SUPER SLIDES)
 
 /* ==============================================
 TEXT ROTATOR FOR HOME TEXTS
-=============================================== */	
-		
+=============================================== */
+
     $(".text-rotetor .rotate").textrotator({
         animation: "dissolve",
         speed: 4000,
 		separator: ","
-    });   
+    });
 
 /* ==============================================
 NAVIGATION SECTION CHANGEABLE BACKGROUND SCRIPT
 =============================================== */
 
-    $('body').scrollspy({ 
+    $('body').scrollspy({
         target: '.navigation-menu',
         offset: 90
     })
 
 /* ==============================================
 TOOLTIPS AND POPOVER
-=============================================== */ 
+=============================================== */
 
     //Tooltip Calling
     $('[data-toggle="tooltip"]').tooltip()
@@ -51,7 +51,7 @@ TOOLTIPS AND POPOVER
 
 /* ==============================================
 HEADER 3 ROWS
-=============================================== */ 
+=============================================== */
 
      $('.header-style-3').each(function(){
         var headerWidth = $(this).outerWidth();
@@ -61,8 +61,8 @@ HEADER 3 ROWS
 
 /* ==============================================
 NAVIGATION LABELS
-=============================================== */ 
-    
+=============================================== */
+
     $('.label').each(function(){
         $(this).append('<span></span>')
         var labelText = $(this).data('label-text');
@@ -115,7 +115,7 @@ NAVIGATION SCROLL EFFECT
 
 /* ==============================================
 NAVIGATION DROP DOWN MENU
-=============================================== */  
+=============================================== */
 
     $('.nav-toggle').hover(function() {
         $(this).find('.dropdown-menu').first().stop(true, true).fadeIn(250);
@@ -136,7 +136,7 @@ NAVIGATION DROP DOWN MENU
 
 /* ==============================================
 MOBILE NAV BUTTON
-=============================================== */  
+=============================================== */
 
     $( "#navigation .mobile-nav-button" ).on('click', function() {
         $( "#navigation .nav-inner div.nav-menu" ).slideToggle( "medium", function() {
@@ -195,7 +195,7 @@ CONTENT OPTIONS
 
 /* ==============================================
 SOFT SCROLL EFFECT FOR NAVIGATION LINKS
-=============================================== */  
+=============================================== */
 
     $('.scroll').on('click', function(event) {
         var $anchor = $(this);
@@ -206,11 +206,11 @@ SOFT SCROLL EFFECT FOR NAVIGATION LINKS
         }, 1400, 'easeInOutExpo');
 
         event.preventDefault();
-    }); 
+    });
 
 /* ==============================================
 FEATURES COLLAPSE
-=============================================== */ 
+=============================================== */
 
     $( ".features-button a.f-button" ).on('click', function() {
         var collapse = $('.f-collapse')
@@ -222,10 +222,10 @@ FEATURES COLLAPSE
 
 /* ==============================================
 CAROUSEL SLIDER FOR BOXES / 3 ITEMS
-=============================================== */  
+=============================================== */
 
     var owlBox = $(".box-carousel.three-items");
-    
+
     // Add .box-carousel class to boxes div
     owlBox.owlCarousel({
         items : 3,
@@ -249,10 +249,10 @@ CAROUSEL SLIDER FOR BOXES / 3 ITEMS
 
 /* ==============================================
 CAROUSEL SLIDER FOR BOXES / 3 ITEMS / DRAGABLE
-=============================================== */  
+=============================================== */
 
     var owlBox = $(".box-carousel-dragable.three-items");
-    
+
     // Add .box-carousel class to boxes div
     owlBox.owlCarousel({
         items : 3,
@@ -272,10 +272,10 @@ CAROUSEL SLIDER FOR BOXES / 3 ITEMS / DRAGABLE
 
 /* ==============================================
 CAROUSEL SLIDER FOR BOXES / 4 ITEMS
-=============================================== */  
+=============================================== */
 
     var owlBox = $(".box-carousel.four-items");
-    
+
     // Add .box-carousel class to boxes div
     owlBox.owlCarousel({
         items : 4,
@@ -295,10 +295,10 @@ CAROUSEL SLIDER FOR BOXES / 4 ITEMS
 
 /* ==============================================
 CAROUSEL SLIDER FOR BOXES / 4 ITEMS / DRAGABLE
-=============================================== */  
+=============================================== */
 
     var owlBox = $(".box-carousel-dragable.four-items");
-    
+
     // Add .box-carousel class to boxes div
     owlBox.owlCarousel({
         items : 4,
@@ -318,10 +318,10 @@ CAROUSEL SLIDER FOR BOXES / 4 ITEMS / DRAGABLE
 
 /* ==============================================
 CAROUSEL SLIDER FOR BOXES / 5 ITEMS
-=============================================== */  
+=============================================== */
 
     var owlBox = $(".box-carousel.five-items");
-    
+
     // Add .box-carousel class to boxes div
     owlBox.owlCarousel({
         items : 5,
@@ -341,10 +341,10 @@ CAROUSEL SLIDER FOR BOXES / 5 ITEMS
 
 /* ==============================================
 CAROUSEL SLIDER FOR BOXES / 6 ITEMS
-=============================================== */  
+=============================================== */
 
     var owlBox = $(".box-carousel.six-items");
-    
+
     // Add .box-carousel class to boxes div
     owlBox.owlCarousel({
         items : 6,
@@ -361,16 +361,16 @@ CAROUSEL SLIDER FOR BOXES / 6 ITEMS
         touchDrag : true,
         slideSpeed : 400
     });
-  
+
 /* ==============================================
 CAROUSEL SLIDER FOR CATEGORIES AND INNER SLIDER
-=============================================== */ 
-    
+=============================================== */
+
     // Category Tag
     var owlCategory = $(".double-slider");
     // Inner Slider Tag
     var owlInnerSlider = $(".inner-slider");
-    
+
     // Categories Slider
     owlCategory.owlCarousel({
         items : 5,
@@ -424,7 +424,7 @@ TESTIMONIALS
         layoutMode: 'slider',
         drag: true,
         auto: true,
-        autoTimeout: 4000,
+        autoTimeout: 8000,
         autoPauseOnHover: true,
         showNavigation: false,
         showPagination: true,
@@ -444,8 +444,8 @@ TESTIMONIALS
 
 /* ==============================================
 CUSTOM IMAGE SLIDER
-=============================================== */  
-        
+=============================================== */
+
     $('.basic_slider').flexslider({
         animation: "fade",
         selector: ".image_slider li",
@@ -453,17 +453,17 @@ CUSTOM IMAGE SLIDER
         directionNav: true,
         animationSpeed: 500,
         slideshowSpeed: 5000,
-        pauseOnHover: true, 
+        pauseOnHover: true,
         direction: "vertical",
         start: function(slider){
-            $('body').removeClass('loading'); 
+            $('body').removeClass('loading');
         }
      });
 
 /* ==============================================
 FLEX SLIDER WITH IMAGE PAGINATION
-=============================================== */  
-        
+=============================================== */
+
     $('.image-pgn-slider').flexslider({
         animation: "slide",
         controlNav: "thumbnails"
@@ -485,14 +485,14 @@ MAGNIFIC POPUP (LIGHTBOX PLUGIN)
     });
 
     //iframe scripts
-    $.extend(true, $.magnificPopup.defaults, {  
+    $.extend(true, $.magnificPopup.defaults, {
         iframe: {
             patterns: {
                 //youtube videos
                 youtube: {
-                    index: 'youtube.com/', 
-                    id: 'v=', 
-                    src: 'http://www.youtube.com/embed/%id%?autoplay=1' 
+                    index: 'youtube.com/',
+                    id: 'v=',
+                    src: 'http://www.youtube.com/embed/%id%?autoplay=1'
                 },
                 //vimeo videos
                 vimeo: {
@@ -519,17 +519,17 @@ MAGNIFIC POPUP (LIGHTBOX PLUGIN)
               enabled:true
             }
         });
-    }); 
+    });
 
 /* ==============================================
 VIDEO PLAYER
-=============================================== */  
+=============================================== */
 
     $(".player").mb_YTPlayer();
 
 /* ==============================================
 CHANGE BG TONE WITH HOVER
-=============================================== */ 
+=============================================== */
 
     $("#fullpage .feature-boxes").on('hover', function(){
         $(".page_bg").animate({"opacity": 0.8}, 400);
@@ -572,18 +572,18 @@ MOBILE BACKGROUND FOR VIDEO BACKGROUNDS
 
         // Select to link
         $('a.ex-link').on('click', function(){
-            var Exlink = this.getAttribute('href'); 
+            var Exlink = this.getAttribute('href');
             var emptyLink = jQuery(this).attr("href");
 
             if(emptyLink === "#") {}
             else{
 
                 // Fade In Page Loader
-                $('#pageloader').fadeIn(700, function(){          
+                $('#pageloader').fadeIn(700, function(){
                     document.location.href = Exlink;
                 });
 
-            }                   
+            }
 
           return false;
         });
@@ -623,7 +623,7 @@ MOBILE BACKGROUND FOR VIDEO BACKGROUNDS
 /* ==============================================
 CREXIS MARGIN AND PADDING RULER
 =============================================== */
- 
+
     // Calculate Margin Left
     $('[class*="ml-"]').each(function() {
         var valueRulerPointOne = $(this).attr('class').split("ml-")[1].split("")[0]
@@ -686,19 +686,19 @@ CHECK FOR INTERNET EXPLORER
 
 /* ==============================================
 NAVIGATION TYPE 2 - NAV CLOSE/OPEN
-=============================================== */  
+=============================================== */
 
     // Navigation Type 2 Scripts
     var navt = $('#navigation-type2 .nav-menu');
     $(navt).append('<span class="fa fa-bars"></span>');
 
-    $('#navigation-type2 .nav-menu span').on('click', function () { 
+    $('#navigation-type2 .nav-menu span').on('click', function () {
         $('#navigation-type2 .nav-menu ul').fadeToggle("slow");
     });
-     $('#navigation-type2 .nav-menu a').on('click', function () { 
+     $('#navigation-type2 .nav-menu a').on('click', function () {
         $('#navigation-type2 .nav-menu ul').fadeOut("slow");
-    }); 
-     
+    });
+
 /* ==============================================
 CALCULATE HOME INNER HEIGHT
 =============================================== */
@@ -717,8 +717,8 @@ CALCULATE HOME INNER HEIGHT
 
 /* ==============================================
 COUNT FACTORS
-=============================================== */  
- 
+=============================================== */
+
     // Count Scripts
     (function($) {
         $.fn.countTo = function(options) {
@@ -775,7 +775,7 @@ COUNT FACTORS
                 to: dataperc,
                 speed: 3000,
                 refreshInterval: 50
-            }); 
+            });
         });
 
     })(jQuery);
@@ -792,7 +792,7 @@ ANIMATED SKILL BARS
         $(this).append( "<span></span>" );
         // Add value to Span
         $(this).find("span").html( datavl + "%");
-    }); 
+    });
 
 /* ==============================================
 CATEGORIES FULL SCREEN - DATA TEXT AREAS
@@ -845,8 +845,8 @@ TIMELINE
 
 /* ==============================================
 BACK TO TOP BUTTON
-=============================================== */  
-    
+=============================================== */
+
     // hide #back-top first
     $("#back-top").hide();
     // fade in #back-top
@@ -865,10 +865,9 @@ BACK TO TOP BUTTON
 
 /* ==============================================
 BLOG DATES FOR MOBILE
-=============================================== */ 
+=============================================== */
 
     $('#blog .post').each(function(){
         var newPosition = $(this).find('.post-header');
         $(this).find('.dates').clone().insertAfter(newPosition).addClass('for-mobile');
     });
-
