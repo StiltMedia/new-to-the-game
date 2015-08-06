@@ -8372,3 +8372,11 @@
 	  -ms-transform: translateY(-50%);
 	  transform: translateY(-50%);
 	}
+
+.contact-link {
+	color: red;
+	transition: .2s all;
+	&:hover {
+		color: black;
+	}
+}

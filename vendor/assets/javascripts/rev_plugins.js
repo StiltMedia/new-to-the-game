@@ -7,34 +7,34 @@ FULLSCREEN HOME PAGE
       jQuery('.revslider').show().revolution(
       {
             dottedOverlay:"none",
-            delay:16000,
+            delay:3000,
             startwidth:1170,
             startheight:700,
             hideThumbs:200,
-            
+
             thumbWidth:100,
             thumbHeight:50,
             thumbAmount:5,
-            
+
             navigationType:"bullet",
             navigationArrows:"solo",
             navigationStyle:"preview4",
-            
+
             touchenabled:"on",
             onHoverStop:"on",
-            
+
             swipe_velocity: 0.7,
             swipe_min_touches: 1,
             swipe_max_touches: 1,
             drag_block_vertical: false,
-                                                
+
             parallax:"scroll",
             parallaxBgFreeze:"on",
             parallaxDisableOnMobile:"on",
             parallaxLevels:[5,10,15,20,25,30,35,40,45,50],
-                                                
+
             keyboardNavigation:"off",
-            
+
             navigationHAlign:"center",
             navigationVAlign:"bottom",
             navigationHOffset:0,
@@ -49,41 +49,41 @@ FULLSCREEN HOME PAGE
             soloArrowRightValign:"center",
             soloArrowRightHOffset:20,
             soloArrowRightVOffset:0,
-                        
+
             shadow:0,
             fullWidth:"off",
             fullScreen:"on",
 
             spinner:"spinner4",
-            
+
             stopLoop:"off",
             stopAfterLoops:-1,
             stopAtSlide:-1,
 
             shuffle:"off",
-            
-            autoHeight:"off",                               
-            forceFullWidth:"off",                                 
-                                                
-            hideTimerBar: "on",               
-                                                
+
+            autoHeight:"off",
+            forceFullWidth:"off",
+
+            hideTimerBar: "on",
+
             hideThumbsOnMobile:"off",
-            hideNavDelayOnMobile:1500,                                  
+            hideNavDelayOnMobile:1500,
             hideBulletsOnMobile:"off",
             hideArrowsOnMobile:"off",
             hideThumbsUnderResolution:0,
-            
+
             hideSliderAtLimit:0,
             hideCaptionAtLimit:0,
             hideAllCaptionAtLilmit:0,
             startWithSlide:0,
-            fullScreenOffsetContainer: ""      
+            fullScreenOffsetContainer: ""
       });
-      
+
 /* ==============================================
 STANDART HOME PAGE (NO FULLSCREEN)
 ============================================== */
-                                                  
+
       jQuery('.revslider-standart').show().revolution(
       {
             dottedOverlay:"none",
@@ -91,30 +91,30 @@ STANDART HOME PAGE (NO FULLSCREEN)
             startwidth:1170,
             startheight:700,
             hideThumbs:200,
-            
+
             thumbWidth:100,
             thumbHeight:50,
             thumbAmount:5,
-            
+
             navigationType:"bullet",
             navigationArrows:"solo",
             navigationStyle:"preview4",
-            
+
             touchenabled:"on",
             onHoverStop:"on",
-            
+
             swipe_velocity: 0.7,
             swipe_min_touches: 1,
             swipe_max_touches: 1,
             drag_block_vertical: false,
-                                                
+
             parallax:"scroll",
             parallaxBgFreeze:"on",
             parallaxDisableOnMobile:"on",
             parallaxLevels:[5,10,15,20,25,30,35,40,45,50],
-                                                
+
             keyboardNavigation:"off",
-            
+
             navigationHAlign:"center",
             navigationVAlign:"bottom",
             navigationHOffset:0,
@@ -129,41 +129,41 @@ STANDART HOME PAGE (NO FULLSCREEN)
             soloArrowRightValign:"center",
             soloArrowRightHOffset:20,
             soloArrowRightVOffset:0,
-                        
+
             shadow:0,
             fullWidth:"on",
             fullScreen:"off",
 
             spinner:"spinner4",
-            
+
             stopLoop:"off",
             stopAfterLoops:-1,
             stopAtSlide:-1,
 
             shuffle:"off",
-            
-            autoHeight:"off",                               
-            forceFullWidth:"on",                                 
-                                                
-            hideTimerBar: "on",               
-                                                
+
+            autoHeight:"off",
+            forceFullWidth:"on",
+
+            hideTimerBar: "on",
+
             hideThumbsOnMobile:"off",
-            hideNavDelayOnMobile:1500,                                  
+            hideNavDelayOnMobile:1500,
             hideBulletsOnMobile:"off",
             hideArrowsOnMobile:"off",
             hideThumbsUnderResolution:0,
-            
+
             hideSliderAtLimit:0,
             hideCaptionAtLimit:0,
             hideAllCaptionAtLilmit:0,
             startWithSlide:0,
-            fullScreenOffsetContainer: ""      
+            fullScreenOffsetContainer: ""
       });
 
 /* ==============================================
 STANDART HOME PAGE TYPE-BIG (NO FULLSCREEN)
 ============================================== */
-                                                  
+
       jQuery('.revslider-standart-big').show().revolution(
       {
             dottedOverlay:"none",
@@ -171,30 +171,30 @@ STANDART HOME PAGE TYPE-BIG (NO FULLSCREEN)
             startwidth:1170,
             startheight:900,
             hideThumbs:200,
-            
+
             thumbWidth:100,
             thumbHeight:50,
             thumbAmount:5,
-            
+
             navigationType:"bullet",
             navigationArrows:"solo",
             navigationStyle:"preview4",
-            
+
             touchenabled:"on",
             onHoverStop:"on",
-            
+
             swipe_velocity: 0.7,
             swipe_min_touches: 1,
             swipe_max_touches: 1,
             drag_block_vertical: false,
-                                                
+
             parallax:"scroll",
             parallaxBgFreeze:"on",
             parallaxDisableOnMobile:"on",
             parallaxLevels:[5,10,15,20,25,30,35,40,45,50],
-                                                
+
             keyboardNavigation:"off",
-            
+
             navigationHAlign:"center",
             navigationVAlign:"bottom",
             navigationHOffset:0,
@@ -209,41 +209,41 @@ STANDART HOME PAGE TYPE-BIG (NO FULLSCREEN)
             soloArrowRightValign:"center",
             soloArrowRightHOffset:20,
             soloArrowRightVOffset:0,
-                        
+
             shadow:0,
             fullWidth:"on",
             fullScreen:"off",
 
             spinner:"spinner4",
-            
+
             stopLoop:"off",
             stopAfterLoops:-1,
             stopAtSlide:-1,
 
             shuffle:"off",
-            
-            autoHeight:"off",                               
-            forceFullWidth:"on",                                 
-                                                
-            hideTimerBar: "on",               
-                                                
+
+            autoHeight:"off",
+            forceFullWidth:"on",
+
+            hideTimerBar: "on",
+
             hideThumbsOnMobile:"off",
-            hideNavDelayOnMobile:1500,                                  
+            hideNavDelayOnMobile:1500,
             hideBulletsOnMobile:"off",
             hideArrowsOnMobile:"off",
             hideThumbsUnderResolution:0,
-            
+
             hideSliderAtLimit:0,
             hideCaptionAtLimit:0,
             hideAllCaptionAtLilmit:0,
             startWithSlide:0,
-            fullScreenOffsetContainer: ""      
+            fullScreenOffsetContainer: ""
       });
 
 /* ==============================================
 STANDART HOME PAGE TYPE-SMALL (NO FULLSCREEN)
 ============================================== */
-                                                  
+
       jQuery('.revslider-standart-small').show().revolution(
       {
             dottedOverlay:"none",
@@ -251,30 +251,30 @@ STANDART HOME PAGE TYPE-SMALL (NO FULLSCREEN)
             startwidth:1170,
             startheight:600,
             hideThumbs:200,
-            
+
             thumbWidth:100,
             thumbHeight:50,
             thumbAmount:5,
-            
+
             navigationType:"bullet",
             navigationArrows:"solo",
             navigationStyle:"preview4",
-            
+
             touchenabled:"on",
             onHoverStop:"on",
-            
+
             swipe_velocity: 0.7,
             swipe_min_touches: 1,
             swipe_max_touches: 1,
             drag_block_vertical: false,
-                                                
+
             parallax:"scroll",
             parallaxBgFreeze:"on",
             parallaxDisableOnMobile:"on",
             parallaxLevels:[5,10,15,20,25,30,35,40,45,50],
-                                                
+
             keyboardNavigation:"off",
-            
+
             navigationHAlign:"center",
             navigationVAlign:"bottom",
             navigationHOffset:0,
@@ -289,41 +289,41 @@ STANDART HOME PAGE TYPE-SMALL (NO FULLSCREEN)
             soloArrowRightValign:"center",
             soloArrowRightHOffset:20,
             soloArrowRightVOffset:0,
-                        
+
             shadow:0,
             fullWidth:"on",
             fullScreen:"off",
 
             spinner:"spinner4",
-            
+
             stopLoop:"off",
             stopAfterLoops:-1,
             stopAtSlide:-1,
 
             shuffle:"off",
-            
-            autoHeight:"off",                               
-            forceFullWidth:"on",                                 
-                                                
-            hideTimerBar: "on",               
-                                                
+
+            autoHeight:"off",
+            forceFullWidth:"on",
+
+            hideTimerBar: "on",
+
             hideThumbsOnMobile:"off",
-            hideNavDelayOnMobile:1500,                                  
+            hideNavDelayOnMobile:1500,
             hideBulletsOnMobile:"off",
             hideArrowsOnMobile:"off",
             hideThumbsUnderResolution:0,
-            
+
             hideSliderAtLimit:0,
             hideCaptionAtLimit:0,
             hideAllCaptionAtLilmit:0,
             startWithSlide:0,
-            fullScreenOffsetContainer: ""      
+            fullScreenOffsetContainer: ""
       });
 
 /* ==============================================
 CONTENT SLIDER
 ============================================== */
-                                                          
+
       jQuery('.content-slider').show().revolution({
             dottedOverlay:"none",
             delay:16000,
@@ -346,12 +346,12 @@ CONTENT SLIDER
             swipe_min_touches: 1,
             swipe_max_touches: 1,
             drag_block_vertical: false,
-                                                
+
             parallax:"scroll",
             parallaxBgFreeze:"on",
             parallaxDisableOnMobile:"on",
             parallaxLevels:[5,10,15,20,25,30,35,40,45,50],
-                                                
+
             keyboardNavigation:"off",
 
             navigationHAlign:"center",
@@ -370,7 +370,7 @@ CONTENT SLIDER
             soloArrowRightVOffset:0,
 
              hideTimerBar: "on",
-                        
+
             shadow:0,
             fullWidth:"on",
             fullScreen:"off",
@@ -383,11 +383,11 @@ CONTENT SLIDER
 
             shuffle:"off",
 
-            autoHeight:"off",                               
-            forceFullWidth:"on",                                  
+            autoHeight:"off",
+            forceFullWidth:"on",
 
             hideThumbsOnMobile:"off",
-            hideNavDelayOnMobile:1500,                                  
+            hideNavDelayOnMobile:1500,
             hideBulletsOnMobile:"off",
             hideArrowsOnMobile:"off",
             hideThumbsUnderResolution:0,
@@ -395,7 +395,7 @@ CONTENT SLIDER
             hideSliderAtLimit:0,
             hideCaptionAtLimit:0,
             hideAllCaptionAtLilmit:0,
-            startWithSlide:0  
+            startWithSlide:0
       });
 
 /* ==============================================
@@ -480,6 +480,5 @@ FEATURED WORKS
             fullScreenOffsetContainer: ""
 
       });
-                              
-});   //ready
 
+});   //ready
