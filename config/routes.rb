@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'pages#index'
 
-  get '/our-mission' => 'pages#mission'
+  get '/about-us' => 'pages#about', as: :about
   get '/did-you-know' => 'pages#know'
   get '/thanks' => 'pages#thanks'
   get '/contact' => 'contacts#new'

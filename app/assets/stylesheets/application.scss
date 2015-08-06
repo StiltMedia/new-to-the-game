@@ -21,3 +21,15 @@
 @import "responsive";
 @import "dark";
 @import "red";
+
+.down-we-go {
+  position: absolute;
+  bottom: 20px;
+  z-index: 100;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+  display: block;
+  text-align: center;
+  width: 100%;  
+}
