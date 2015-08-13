@@ -29,9 +29,7 @@
         </div>
       <% else %>
         <div class="row">
-          <div class="col-sm-7 bkg" style="background-image: url(<%= k.picture(:retina) %>);background-size:cover;background-position: center center;">
-          </div>
-          <div class="col-sm-5">
+          <div class="col-sm-5 col-sm-push-7">
             <div class="box">
               <h3><%= k.title %></h3>
               <hr>
@@ -39,6 +37,8 @@
                 <%= k.description %>
               </p>
             </div>
+          </div>
+          <div class="col-sm-7 col-sm-pull-5 bkg" style="background-image: url(<%= k.picture(:retina) %>);background-size:cover;background-position: center center;">
           </div>
         </div>
       <% end %>
