@@ -8399,3 +8399,13 @@
 i {font-style: italic;}
 .quam {transition: .2s all;}
 .quam:hover {color: #6e6e6e;}
+
+#features ul {
+	font-size: 13px;
+	margin-top: 10px;
+	color: #dddddd;
+	font-weight: 300;
+	line-height: 20px;
+	list-style-type: disc;
+	padding-left: 30px;
+}
