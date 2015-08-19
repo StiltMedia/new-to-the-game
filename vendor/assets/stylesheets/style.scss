@@ -8422,11 +8422,20 @@ i {font-style: italic;}
 .first-nav p {color:white;}
 .second-nav p {color:black;}
 
+
+.mh-250 {
+	min-height: 250px;
+}
+
+
 @media (max-width: 736px) {
 	.nav-alert {
 		width: 200px;
 		left: 35%;
 		top: 20px;
 		font-size: 12px;
+	}
+	.mh-250 {
+  	min-height: 370px;
 	}
 }
